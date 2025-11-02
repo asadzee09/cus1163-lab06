@@ -1,10 +1,12 @@
+package javapro;
+
 import java.util.ArrayList;
 
 public class ProducerConsumerLab {
 
     static class SharedBuffer {
-        private ArrayList<Integer> buffer;
-        private int capacity;
+        private final ArrayList<Integer> buffer;
+        private final int capacity;
 
         public SharedBuffer(int capacity) {
             this.buffer = new ArrayList<>();
